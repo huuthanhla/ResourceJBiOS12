@@ -1,0 +1,60 @@
+
+body {
+        margin: 0;
+        padding: 0;
+        //text-shadow: 0px 1px 1px rgba(0,0,0, 0.4);
+        font-family: neb;
+        font-weight:400;
+        text-transform: capitalize;
+        color: #fff;
+
+}
+
+@font-face {
+        font-family: neb;
+        src: url(neb.otf);
+}
+
+@font-face {
+        font-family: ita;
+        src: url(ita.ttf);
+}
+
+@font-face {
+        font-family: tp;
+        src: url(tp.ttf);
+}
+
+@font-face{
+  font-family:eg;
+  src:url(eg.ttf);
+}
+
+
+#lunardate {
+         position: absolute;
+         top: 138px;
+         Left:  10px;
+        width: 375px;
+        text-align: center;
+        font-family: eg;
+        font-size: 18px;
+        //text-shadow: 1px1px1px #000;
+}
+#year {
+         position: absolute;
+         top: 505px;
+         Left: 180px;
+        width: 140px;
+        font-family: tp;
+        //text-shadow: 1px1px1px #000;
+}
+
+#ngontinh {
+         positionss: absolute;
+         top: 490px;
+         Left: 100px;
+         width: 50px;
+        font-family: tp;
+
+}

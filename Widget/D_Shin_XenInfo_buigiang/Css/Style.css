@@ -1,0 +1,548 @@
+body{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    height:100%;
+	font-family: 'Edgy';
+	color:white;
+	-webkit-animation-fill-mode: forwards;
+}
+#touch1 {
+	position: absolute;
+	top: 22.8%;
+	left: 8.2%;
+	width: 8%;
+	height: 5%;
+	z-index: 1000;
+	opacity: 0.6;
+}
+
+#touch2{
+	position: absolute;
+	top: 22.8%;
+	left: 84%;
+	width: 8%;
+	height: 5%;
+	z-index: 1000;
+	opacity: 0.6;
+}
+#Main{
+	z-index: 1;
+	opacity: 1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+
+#MediaPlayer{	
+	z-index: 1;
+	opacity: 0;
+	display: none;
+}
+#Layer{
+	position: absolute;
+	background: url('../images/Layer.png') center no-repeat;
+	background-size: 100% 100%;
+	width:  100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+display:none;
+}
+#Layer1{
+	position: absolute;
+	background: url('../images/Layer1.png') center no-repeat;
+	background-size: 100% 100%;
+	width:  100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	z-index: 1;
+}
+#mainbg{
+	position: absolute;
+	top: 24.25%;
+	left: 8.5%;
+	background: url('../images/Main.png') center no-repeat;
+	background-size: 100% 100%;
+	width: 7%;
+	height: 3.75%;
+	z-index: 1;
+}
+#media{
+	position: absolute;
+	top: 24.25%;
+	left: 84.5%;
+	background: url('../images/media.png') center no-repeat;
+	background-size: 100% 100%;
+	width: 7%;
+	height: 3.75%;
+	z-index: 1;
+	display: none;
+}
+#city {
+	position: absolute;
+	top: 17.25%;
+	left: 60%;
+    width: 100%;
+	text-align: left;
+    font-size: 5vw;
+	z-index:1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#time{
+	position: absolute;
+	top: 8%;
+	right: 58.5%;
+    width: 100%;
+    text-align: right;
+    font-size: 12vw;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+	z-index:1;
+}
+#datespan{
+	position: absolute;
+	top: 14%;
+	left: 0%;
+    width: 100%;
+	text-align: center;
+    font-size: 5.5vw;
+	z-index:1;
+	display: none;
+}
+#date{
+	position: absolute;
+	top: 16%;
+	left: 0%;
+    width: 100%;
+	text-align: center;
+    font-size: 13vw;
+	z-index:1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#day {
+	position: absolute;
+	top: 17.25%;
+	right: 60%;
+    width: 100%;
+	text-align: right;
+    font-size: 5vw;
+	z-index:1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#month{
+	position: absolute;
+	top: 20%;
+	right: 60%;
+    width: 100%;
+	text-align: right;
+    font-size: 5vw;
+	z-index:1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#temp {
+	position: absolute;
+	top: 8%;
+	left: 58.5%;
+    width: 100%;
+    text-align: left;
+    font-size: 12vw;
+	z-index:1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#feelslike{
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	width: 100%;
+	height: 4%;
+	text-align: center;
+	font-size: 5vw;
+	z-index: 1;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+	display: none;
+}
+#condition {
+	position: absolute;
+	top: 20%;
+	left: 60%;
+    width: 100%;
+	text-align: left;
+    font-size: 5vw;
+	z-index:1;
+}
+#icon {
+	position: absolute;
+	top: 2%;
+	left: 40.5%;
+	width: 20%;
+	z-index: 4;
+}
+#forecast {
+	position: absolute;
+	top: 13%;
+	left: 5%;
+	width: 100%;
+	height: 100%;
+	font-family: 'BebasNeue';
+	font-size: 4vw;
+	z-index: 4;
+ letter-spacing:0px;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#day1icon{
+    position: absolute;
+	top:19.5%;
+    left: 14%;
+    width: 10%;
+	clip: rect(0px,232px,232px,14px);
+	z-index: 1;
+	display: none;
+}
+#day2icon{
+    position: absolute;
+	top:19.5%;
+    left: 33.9%;
+    width: 10%;
+	clip: rect(0px,232px,232px,14px);
+	z-index: 1;
+	display: none;
+}
+#day3icon{
+    position: absolute;
+	top:19.5%;
+    left: 53.75%;
+    width: 10%;
+	clip: rect(0px,232px,232px,14px);
+	z-index: 1;
+	display: none;
+}
+#day4icon{
+    position: absolute;
+	top:19.5%;
+    left: 73.75%;
+    width: 10%;
+	clip: rect(0px,232px,232px,14px);
+	z-index: 1;
+	display: none;
+}
+#day1text{
+    position: absolute;
+	top:20%;
+    left:-13%; 
+    width: 30%;
+	text-align: right;
+	display: none;
+}
+#day2text{
+    position: absolute;
+    top:20%;
+    left:6.75%; 
+    width: 30%;
+	text-align: right;
+	display: none;
+}
+#day3text{
+    position: absolute;
+    top:20%;
+    left:26.5%; 
+    width: 30%;
+	text-align: right;
+	display: none;
+}
+#day4text{
+    position: absolute;
+    top:20%;
+    left:46.5%; 
+    width: 30%;
+	text-align: right;
+	display: none;
+}
+#day1temp{
+    position: absolute;
+    top:22%;
+    left:-13%; 
+    width: 30%;	
+	text-align: right;
+	display: none;
+}
+#day2temp{
+    position: absolute;
+    top:22%;
+    left:6.75%; 
+    width: 30%;	
+	text-align: right;
+	display: none;
+}
+#day3temp{
+    position: absolute;
+    top:22%;
+    left:26.5%; 
+    width: 30%;	
+	text-align: right;
+	display: none;
+}
+#day4temp{
+    position: absolute;
+    top:22%;
+    left:46.5%; 
+    width: 30%;	
+	text-align: right;
+	display: none;
+}
+.templo {
+    margin-top: 0;
+}
+.temphi {
+    margin-top: 0;
+}
+#BatteryImage {
+	position: absolute;
+	top: 38.5%;
+	left: 0%;
+	width: 100%;
+	z-index: 1;
+	opacity: 1;
+	display: none;
+}
+#battery{
+	position: absolute;
+	top: 49%;
+	right: 27.75%;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	font-size: 4vw;
+	z-index: 30;
+	display: none;
+}
+#Charging{
+	position: absolute;
+	top: 49%;
+	left: 31%;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	font-size: 4vw;
+	z-index: 30;
+	display: none;
+}
+#ChargingImage{
+	position: absolute;
+	background-size: 100% 100%;
+	width: 3%;
+	top: 49.25%;
+	left: 27%;
+	z-index: 10;
+	display: none;
+}
+#device{
+	position: absolute;
+	top: 25%;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+	font-size: 5vw;
+	z-index: 1;
+       text-shadow: 0px 3px 2px rgba(0,0,0,0.7);
+}
+#ramFree{
+	position: absolute;
+	top: 33%;
+	right: 52%;
+    width: 100%;
+    text-align: right;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#Free{
+	position: absolute;
+	top: 33%;
+	left: 10%;
+    width: 100%;
+    text-align: left;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#ramAvailable{
+	position: absolute;
+	top: 36%;
+	right: 52%;
+    width: 100%;
+    text-align: right;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#Available{
+	position: absolute;
+	top: 36%;
+	left: 10%;
+    width: 100%;
+    text-align: left;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#ramUsed{
+	position: absolute;
+	top: 33%;
+	right: 10%;
+    width: 100%;
+    text-align: right;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#Used{
+	position: absolute;
+	top: 33%;
+	left: 52%;
+    width: 100%;
+    text-align: left;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#ramPhysical{
+	position: absolute;
+	top: 36%;
+	right: 10%;
+    width: 100%;
+    text-align: right;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#Physical{
+	position: absolute;
+	top: 36%;
+	left: 52%;
+    width: 100%;
+    text-align: left;
+    font-size: 5vw;
+	z-index:30;
+	display: none;
+}
+#signalimage {
+	position: absolute;
+	top: 46.75%;
+	left: 76.5%;
+	width: 14%;
+	height: 2%;
+	z-index: 1;
+	opacity: 1;
+	display: none;
+}
+#wifiimage {
+	position: absolute;
+	top: 45%;
+	left: 11%;
+	width: 10%;
+	z-index: 1;
+	opacity: 1;
+	display: none;
+}
+#title{
+	position: absolute;
+	top: 15%;
+	left: 38%;
+	width: 53%;
+	font-size: 5vw;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: scroll;
+	white-space: nowrap;
+	z-index: 80;
+	display: none;
+}
+#artist{
+	position: absolute;
+	top: 10%;
+	left: 38%;
+	width: 53%;
+	font-size: 5vw;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: scroll;
+	white-space: nowrap;
+	z-index: 80;
+	display: none;
+}
+#art{
+	position: absolute;
+	top: 7%;
+	left: 10.75%;
+	background-size: cover;
+	background-image: url('../images/MediaPlayer/blank.png');
+	background-size: 100% 100%;
+	width: 25%;
+	height: 14%;
+	z-index: 3;
+	display: none;
+}
+#Glas {
+	position: absolute;
+	top: 4.5%;
+	left: 6.5%;
+	background-image: url('../images/MediaPlayer/Glas.png');
+	background-size: 100% 100%;
+	width: 33.6%;
+	height: 19%;
+	z-index: 4;
+	display: none;
+}
+#mbg {
+	position: absolute;
+	top: 7%;
+	left: 11%;
+	background-image: url('../images/MediaPlayer/mbg.png');
+	background-size: 100% 100%;
+	width: 25%;
+	height: 14%;
+	z-index: 2;
+	display: none;
+}
+#controls{
+	position: absolute;
+	margin-left: 46%;
+	margin-top: 39%;
+	z-index: 100;
+}
+#play{}
+#next{
+	position: absolute;
+	top:15%;
+	left: 150%;
+}
+#prev{
+	position: absolute;
+	top:15%;
+	left: -125%;
+}
+	@font-face {
+		font-family: 'Edgy';
+		src: url('../Fonts/eg.ttf');
+	}
+	@font-face {
+		font-family: 'Futura';
+		src: url('../Fonts/Futura.ttf');
+	}
+	@font-face {
+		font-family: 'neutraface';
+		src: url('../Fonts/neutraface.ttf');
+	}
+	@font-face {
+	font-family: 'BebasNeue';
+	src: url('../Fonts/BebasNeue.otf');
+	}
