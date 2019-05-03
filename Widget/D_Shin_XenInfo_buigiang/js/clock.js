@@ -44,7 +44,7 @@ function clock(options) {
             funcs = {
                 hour: function () {
                     var hour = (options.twentyfour === true) ? d.getHours() : (d.getHours() + 11) % 12 + 1;
-                    hour = (options.padzero === true) ? (hour < 10 ? "0" + hour : "" + hour) : hour;
+                    hour = (options.padzero === true) ? (hour < 10 ? "" + hour : "" + hour) : hour;
                     return hour;
                 },
                 rawhour: function () {
@@ -158,7 +158,7 @@ var current = (window.navigator.language.length >= 2) ? window.navigator.languag
             weekday: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
 			weekarray: ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon", "Tue"],
             sday: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-            month: ["Tháng 01", "Tháng 02", "Tháng 03", "Tháng 04", "Tháng 50", "Tháng 06", "Tháng 07", "Tháng 08", "Tháng 09", "Tháng 10", "Tháng 11", "Tháng 12"],
+            month: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
             smonth: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             condition: ["Lốc xoáy", "Bão nhiệt đới", "Siêu bão", "Bão tố có sấm sét", "Bão tố có sấm sét", "Tuyết", "Mưa tuyết", "Mưa tuyết", "Mưa phùn lạnh giá", "Mưa phùn", "Mưa đá", "Mưa rào", "Mưa rào", "Mưa dông", "Tuyết", "Tuyết", "Tuyết", "Mưa đá", "Mưa tuyết", "Bụi", "Sương mù", "Sương mờ", "Âm u", "Gió giật mạnh", "Có gió", "Lạnh", "Nhiều mây", "Nhiều mây", "Nhiều mây", "Nhiều mây", "Nhiều mây", "Trời quang đãng", "Có nắng", "Trời đẹp", "Trời đẹp", "Mưa tuyết", "Nóng", "Bão tố có sấm sét", "Bão tố có sấm sét", "Bão tố có sấm sét", "Mưa rào", "Tuyết rơi nhiều", "Tuyết rơi nhẹ", "Tuyết rơi nhiều", "Có mây rải rác", "Bão tố có sấm sét", "Tuyết", "Bão tố có sấm sét", "blank"],
 			charging: ["Not Charging" , "Charging"]
