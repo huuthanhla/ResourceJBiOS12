@@ -17,3 +17,4 @@
 17. Youtubed
 18. CallbarXS
 19. BetterCCXI & BetterCCXI(Weather Addon)
+20. SwipeSelection
